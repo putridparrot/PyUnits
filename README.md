@@ -1,7 +1,6 @@
 # PyUnits
 
 [![Build PyUnits](https://github.com/putridparrot/PyUnits/actions/workflows/build.yml/badge.svg)](https://github.com/putridparrot/PyUnits/actions/workflows/dotnet-core.yml)
-[![NuGet version (PyUnits)](https://img.shields.io/nuget/v/PyUnits.svg?style=flat-square)](https://www.nuget.org/packages/PyUnits/)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/putridparrot/PyUnits/blob/master/LICENSE.md)
 [![GitHub Releases](https://img.shields.io/github/release/putridparrot/PyUnits.svg)](https://github.com/putridparrot/PyUnits/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/putridparrot/PyUnits.svg)](https://github.com/putridparrot/PyUnits/issues)
