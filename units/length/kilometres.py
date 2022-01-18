@@ -11,7 +11,7 @@ def to_centimetres(value):
 def to_metres(value): 
 	return value * 1000.0
 def to_inches(value): 
-	return value / 0.0000254
+	return value * 39370.07874
 def to_feet(value): 
 	return value / 0.0003048
 def to_yards(value): 

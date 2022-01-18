@@ -9,7 +9,7 @@ def to_square_kilometres(value):
 def to_square_metres(value): 
 	return value * 10000.0
 def to_square_miles(value): 
-	return value / 259.0
+	return value / 258.99881103
 def to_square_yards(value): 
 	return value * 11959.900463011
 def to_square_feet(value): 

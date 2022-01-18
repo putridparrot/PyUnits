@@ -25,8 +25,8 @@ class TestKilometresMethods(unittest.TestCase):
 		self.assertAlmostEqual(1200.0, units.length.kilometres.to_metres(1.2), places=1)
 
 	def test_convert_known_kilometres_to_inches(self):
-		self.assertAlmostEqual(47244.1, units.length.kilometres.to_inches(1.2), places=1)
-		self.assertAlmostEqual(25590.55, units.length.kilometres.to_inches(0.65), places=1)
+		self.assertAlmostEqual(47244.094488, units.length.kilometres.to_inches(1.2), places=1)
+		self.assertAlmostEqual(25590.551181, units.length.kilometres.to_inches(0.65), places=1)
 		self.assertAlmostEqual(196850.3937, units.length.kilometres.to_inches(5.0), places=1)
 
 	def test_convert_known_kilometres_to_feet(self):

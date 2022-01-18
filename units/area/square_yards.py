@@ -7,7 +7,7 @@
 def to_square_kilometres(value): 
 	return value / 1195990.05
 def to_square_metres(value): 
-	return value / 1.196
+	return value / 1.1959900463
 def to_square_miles(value): 
 	return value / 3097600.0
 def to_square_feet(value): 

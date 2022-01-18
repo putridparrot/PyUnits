@@ -21,8 +21,8 @@ class TestKilocaloriesMethods(unittest.TestCase):
 
 	def test_convert_known_kilocalories_to_btu(self):
 		self.assertAlmostEqual(13.4833, units.energy.kilocalories.to_btu(3.4), places=1)
-		self.assertAlmostEqual(432.2940, units.energy.kilocalories.to_btu(109.0), places=1)
-		self.assertAlmostEqual(90.774114, units.energy.kilocalories.to_btu(22.89), places=1)
+		self.assertAlmostEqual(432.4436269206, units.energy.kilocalories.to_btu(109.0), places=1)
+		self.assertAlmostEqual(90.8131616, units.energy.kilocalories.to_btu(22.89), places=1)
 
 	def test_convert_known_kilocalories_to_calories(self):
 		self.assertAlmostEqual(22800.0, units.energy.kilocalories.to_calories(22.8), places=1)

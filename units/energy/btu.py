@@ -7,7 +7,7 @@
 def to_kilojoules(value): 
 	return value * 1.0550559
 def to_kilocalories(value): 
-	return value / 3.966
+	return value / 3.9673727240424
 def to_joules(value): 
 	return value * 1055.06
 def to_calories(value): 

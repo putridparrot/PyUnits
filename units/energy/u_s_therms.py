@@ -17,7 +17,7 @@ def to_calories(value):
 def to_watt_hours(value): 
 	return value * 29300.1
 def to_kilowatt_hours(value): 
-	return value * 29.3
+	return value * 29.3001
 def to_foot_pounds(value): 
 	return value * 77816937.099186
 

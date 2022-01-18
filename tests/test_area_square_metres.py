@@ -25,9 +25,9 @@ class TestSquareMetresMethods(unittest.TestCase):
 		self.assertAlmostEqual(837.193, units.area.square_metres.to_square_yards(700.0), places=1)
 
 	def test_convert_known_square_metres_to_square_feet(self):
-		self.assertAlmostEqual(968.752, units.area.square_metres.to_square_feet(90.0), places=1)
-		self.assertAlmostEqual(1937.52, units.area.square_metres.to_square_feet(180.0), places=1)
-		self.assertAlmostEqual(1328.2775, units.area.square_metres.to_square_feet(123.4), places=1)
+		self.assertAlmostEqual(968.7519375, units.area.square_metres.to_square_feet(90.0), places=1)
+		self.assertAlmostEqual(1937.503875, units.area.square_metres.to_square_feet(180.0), places=1)
+		self.assertAlmostEqual(1328.2665454, units.area.square_metres.to_square_feet(123.4), places=1)
 
 	def test_convert_known_square_metres_to_square_inches(self):
 		self.assertAlmostEqual(12400.0, units.area.square_metres.to_square_inches(8.0), places=1)

@@ -15,7 +15,7 @@ def to_btu(value):
 def to_calories(value): 
 	return value * 860421.0
 def to_u_s_therms(value): 
-	return value / 29.3
+	return value / 29.3001
 def to_watt_hours(value): 
 	return value * 1000.0
 def to_foot_pounds(value): 

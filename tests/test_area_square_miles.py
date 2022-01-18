@@ -35,7 +35,7 @@ class TestSquareMilesMethods(unittest.TestCase):
 		self.assertAlmostEqual(28101.4272, units.area.square_miles.to_square_inches(0.000007), places=1)
 
 	def test_convert_known_square_miles_to_hectares(self):
-		self.assertAlmostEqual(25900.0, units.area.square_miles.to_hectares(100.0), places=1)
+		self.assertAlmostEqual(25899.881103, units.area.square_miles.to_hectares(100.0), places=1)
 		self.assertAlmostEqual(595.697, units.area.square_miles.to_hectares(2.3), places=1)
 		self.assertAlmostEqual(233.099, units.area.square_miles.to_hectares(0.9), places=1)
 
