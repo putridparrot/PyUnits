@@ -13,11 +13,11 @@ def to_hours(value):
 def to_days(value): 
 	return value * 7.0
 def to_months(value): 
-	return value / 4.345
+	return value / 4.34524
 def to_years(value): 
 	return value / 52.143
 def to_decades(value): 
 	return value / 521.0
 def to_centuries(value): 
-	return value / 5214.0
+	return value / 5214.29
 

@@ -49,5 +49,10 @@ class TestWattHoursMethods(unittest.TestCase):
 		self.assertAlmostEqual(796.567, units.energy.watt_hours.to_foot_pounds(0.3), places=1)
 		self.assertAlmostEqual(239235.3219, units.energy.watt_hours.to_foot_pounds(90.1), places=1)
 
+	def test_convert_known_watt_hours_to_electronvolts(self):
+		self.assertAlmostEqual(1496463565615.39, units.energy.watt_hours.to_electronvolts(0.0000000000666), places=1)
+		self.assertAlmostEqual(179755383257104.03, units.energy.watt_hours.to_electronvolts(0.000000008), places=1)
+		self.assertAlmostEqual(2.7637390175779744E+17, units.energy.watt_hours.to_electronvolts(0.0000123), places=1)
+
 if __name__ == '__main__':
     unittest.main()

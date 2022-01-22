@@ -49,5 +49,10 @@ class TestJoulesMethods(unittest.TestCase):
 		self.assertAlmostEqual(7.523134, units.energy.joules.to_foot_pounds(10.2), places=1)
 		self.assertAlmostEqual(4.94167, units.energy.joules.to_foot_pounds(6.7), places=1)
 
+	def test_convert_known_joules_to_electronvolts(self):
+		self.assertAlmostEqual(55424602968504.0, units.energy.joules.to_electronvolts(0.00000888), places=1)
+		self.assertAlmostEqual(77020225296322.0, units.energy.joules.to_electronvolts(0.00001234), places=1)
+		self.assertAlmostEqual(41568452226378.0, units.energy.joules.to_electronvolts(0.00000666), places=1)
+
 if __name__ == '__main__':
     unittest.main()

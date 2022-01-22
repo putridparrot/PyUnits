@@ -20,4 +20,6 @@ def to_kilowatt_hours(value):
 	return value / 860.421
 def to_foot_pounds(value): 
 	return value * 3085.96
+def to_electronvolts(value): 
+	return value * 26131952998320305078272.00
 

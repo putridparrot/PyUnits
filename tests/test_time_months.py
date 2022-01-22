@@ -26,12 +26,12 @@ class TestMonthsMethods(unittest.TestCase):
 
 	def test_convert_known_months_to_days(self):
 		self.assertAlmostEqual(136.875, units.time.months.to_days(4.5), places=1)
-		self.assertAlmostEqual(2737.53, units.time.months.to_days(90.0), places=1)
+		self.assertAlmostEqual(2737.5029, units.time.months.to_days(90.0), places=1)
 		self.assertAlmostEqual(12.1667, units.time.months.to_days(0.4), places=1)
 
 	def test_convert_known_months_to_weeks(self):
 		self.assertAlmostEqual(2.17262, units.time.months.to_weeks(0.5), places=1)
-		self.assertAlmostEqual(382.359, units.time.months.to_weeks(88.0), places=1)
+		self.assertAlmostEqual(382.381120, units.time.months.to_weeks(88.0), places=1)
 		self.assertAlmostEqual(54.75006, units.time.months.to_weeks(12.6), places=1)
 
 	def test_convert_known_months_to_years(self):

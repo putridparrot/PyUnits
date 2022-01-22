@@ -49,5 +49,10 @@ class TestKilocaloriesMethods(unittest.TestCase):
 		self.assertAlmostEqual(1542.98, units.energy.kilocalories.to_foot_pounds(0.5), places=1)
 		self.assertAlmostEqual(7406.3, units.energy.kilocalories.to_foot_pounds(2.4), places=1)
 
+	def test_convert_known_kilocalories_to_electronvolts(self):
+		self.assertAlmostEqual(1740388069688132.2, units.energy.kilocalories.to_electronvolts(0.0000000666), places=1)
+		self.assertAlmostEqual(52263905996640608.0, units.energy.kilocalories.to_electronvolts(0.000002), places=1)
+		self.assertAlmostEqual(26105821045321988.0, units.energy.kilocalories.to_electronvolts(0.000000999), places=1)
+
 if __name__ == '__main__':
     unittest.main()

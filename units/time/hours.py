@@ -13,7 +13,7 @@ def to_days(value):
 def to_weeks(value): 
 	return value / 168.0
 def to_months(value): 
-	return value / 730.0
+	return value / 730.001
 def to_years(value): 
 	return value / 8760.0
 def to_decades(value): 

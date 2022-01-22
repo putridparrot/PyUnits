@@ -5,21 +5,21 @@
 # </auto-generated>
 
 def to_kilojoules(value): 
-	return value / 737.562
+	return value / 6241509744511500156928.00
 def to_kilocalories(value): 
-	return value / 3085.96
+	return value / 26131952998320305078272.00
 def to_joules(value): 
-	return value * 1.35582
+	return value / 6241509343300000000.0
 def to_btu(value): 
-	return value / 778.169
+	return value / 6585141385224143241216.0
 def to_calories(value): 
-	return value / 3.08596
+	return value / 2.6131936951817e+19
 def to_u_s_therms(value): 
-	return value / 77816937.099186
+	return value / 6.5835660010911e+26
 def to_watt_hours(value): 
-	return value / 2655.22
+	return value / 2.2469422907138e+22
 def to_kilowatt_hours(value): 
-	return value * 0.00000037662
-def to_electronvolts(value): 
-	return value * 8462350936293971968.00
+	return value / 2.246943e+25
+def to_foot_pounds(value): 
+	return value / 8462350936293971968.00
 

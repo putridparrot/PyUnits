@@ -49,5 +49,10 @@ class TestUSThermsMethods(unittest.TestCase):
 		self.assertAlmostEqual(1556338.74198, units.energy.u_s_therms.to_foot_pounds(0.02), places=1)
 		self.assertAlmostEqual(23345.081129, units.energy.u_s_therms.to_foot_pounds(0.0003), places=1)
 
+	def test_convert_known_u_s_therms_to_electronvolts(self):
+		self.assertAlmostEqual(592520940098199000000.0, units.energy.u_s_therms.to_electronvolts(0.0000009), places=1)
+		self.assertAlmostEqual(8.815394875460983E+17, units.energy.u_s_therms.to_electronvolts(0.000000001339), places=1)
+		self.assertAlmostEqual(43846549567266728.0, units.energy.u_s_therms.to_electronvolts(0.0000000000666), places=1)
+
 if __name__ == '__main__':
     unittest.main()

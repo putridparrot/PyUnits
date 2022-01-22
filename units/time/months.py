@@ -9,11 +9,11 @@ def to_seconds(value):
 def to_minutes(value): 
 	return value * 43800.0
 def to_hours(value): 
-	return value * 730.0
+	return value * 730.001
 def to_days(value): 
-	return value * 30.417
+	return value * 30.4167
 def to_weeks(value): 
-	return value * 4.345
+	return value * 4.34524
 def to_years(value): 
 	return value / 12.0
 def to_decades(value): 

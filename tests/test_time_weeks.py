@@ -31,7 +31,7 @@ class TestWeeksMethods(unittest.TestCase):
 
 	def test_convert_known_weeks_to_months(self):
 		self.assertAlmostEqual(0.920547, units.time.weeks.to_months(4.0), places=1)
-		self.assertAlmostEqual(207.134637, units.time.weeks.to_months(900.0), places=1)
+		self.assertAlmostEqual(207.12319687, units.time.weeks.to_months(900.0), places=1)
 		self.assertAlmostEqual(0.87452, units.time.weeks.to_months(3.8), places=1)
 
 	def test_convert_known_weeks_to_years(self):

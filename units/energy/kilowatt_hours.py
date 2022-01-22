@@ -20,4 +20,6 @@ def to_watt_hours(value):
 	return value * 1000.0
 def to_foot_pounds(value): 
 	return value / 0.00000037662
+def to_electronvolts(value): 
+	return value * 2.246943e+25
 

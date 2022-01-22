@@ -49,5 +49,10 @@ class TestBtuMethods(unittest.TestCase):
 		self.assertAlmostEqual(233.451, units.energy.btu.to_foot_pounds(0.3), places=1)
 		self.assertAlmostEqual(2023.24, units.energy.btu.to_foot_pounds(2.6), places=1)
 
+	def test_convert_known_btu_to_electronvolts(self):
+		self.assertAlmostEqual(519567655294184.88, units.energy.btu.to_electronvolts(0.0000000789), places=1)
+		self.assertAlmostEqual(6598311667994592.0, units.energy.btu.to_electronvolts(0.000001002), places=1)
+		self.assertAlmostEqual(6585141385224.14, units.energy.btu.to_electronvolts(0.000000001), places=1)
+
 if __name__ == '__main__':
     unittest.main()

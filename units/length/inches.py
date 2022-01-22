@@ -9,7 +9,7 @@ def to_millimetres(value):
 def to_centimetres(value): 
 	return value * 2.54
 def to_metres(value): 
-	return value / 39.3701
+	return value / 39.37007874
 def to_kilometres(value): 
 	return value / 39370.07874
 def to_feet(value): 

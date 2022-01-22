@@ -49,5 +49,10 @@ class TestKilojoulesMethods(unittest.TestCase):
 		self.assertAlmostEqual(1770.15, units.energy.kilojoules.to_foot_pounds(2.4), places=1)
 		self.assertAlmostEqual(663.806, units.energy.kilojoules.to_foot_pounds(0.9), places=1)
 
+	def test_convert_known_kilojoules_to_electronvolts(self):
+		self.assertAlmostEqual(6235268234766989.0, units.energy.kilojoules.to_electronvolts(0.000000999), places=1)
+		self.assertAlmostEqual(1248301948902300.0, units.energy.kilojoules.to_electronvolts(0.0000002), places=1)
+		self.assertAlmostEqual(3.5389360251380204E+19, units.energy.kilojoules.to_electronvolts(0.00567), places=1)
+
 if __name__ == '__main__':
     unittest.main()
