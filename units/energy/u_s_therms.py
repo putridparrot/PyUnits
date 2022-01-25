@@ -7,7 +7,7 @@
 def to_kilojoules(value): 
 	return value * 105480.04
 def to_kilocalories(value): 
-	return value * 25210.4
+	return value * 25210.44007218
 def to_joules(value): 
 	return value * 105480400.0
 def to_btu(value): 

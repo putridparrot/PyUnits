@@ -17,5 +17,5 @@ def to_square_feet(value):
 def to_square_inches(value): 
 	return value * 6272640.0
 def to_hectares(value): 
-	return value / 2.471
+	return value / 2.4710538146717
 

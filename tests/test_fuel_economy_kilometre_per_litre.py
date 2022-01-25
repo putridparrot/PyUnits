@@ -19,5 +19,10 @@ class TestKilometrePerLitreMethods(unittest.TestCase):
 		self.assertAlmostEqual(508.466, units.fuel_economy.kilometre_per_litre.to_miles_per_gallon(180.0), places=1)
 		self.assertAlmostEqual(15.254, units.fuel_economy.kilometre_per_litre.to_miles_per_gallon(5.4), places=1)
 
+	def test_convert_known_kilometre_per_litre_to_litresper100_kilometres(self):
+		self.assertAlmostEqual(0.917431, units.fuel_economy.kilometre_per_litre.to_litresper100_kilometres(109.0), places=1)
+		self.assertAlmostEqual(125.0, units.fuel_economy.kilometre_per_litre.to_litresper100_kilometres(0.8), places=1)
+		self.assertAlmostEqual(43.4783, units.fuel_economy.kilometre_per_litre.to_litresper100_kilometres(2.3), places=1)
+
 if __name__ == '__main__':
     unittest.main()

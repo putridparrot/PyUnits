@@ -11,7 +11,7 @@ def to_kilocalories(value):
 def to_joules(value): 
 	return value * 4.184
 def to_btu(value): 
-	return value / 252.164
+	return value / 252.1644007218
 def to_u_s_therms(value): 
 	return value / 25210420.0
 def to_watt_hours(value): 

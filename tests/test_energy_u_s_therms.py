@@ -15,7 +15,7 @@ class TestUSThermsMethods(unittest.TestCase):
 		self.assertAlmostEqual(200412.075, units.energy.u_s_therms.to_kilojoules(1.9), places=1)
 
 	def test_convert_known_u_s_therms_to_kilocalories(self):
-		self.assertAlmostEqual(27731.44, units.energy.u_s_therms.to_kilocalories(1.1), places=1)
+		self.assertAlmostEqual(27731.484079398004, units.energy.u_s_therms.to_kilocalories(1.1), places=1)
 		self.assertAlmostEqual(1008.417, units.energy.u_s_therms.to_kilocalories(0.04), places=1)
 		self.assertAlmostEqual(310.088174, units.energy.u_s_therms.to_kilocalories(0.0123), places=1)
 

@@ -16,8 +16,8 @@ class TestBtuMethods(unittest.TestCase):
 
 	def test_convert_known_btu_to_kilocalories(self):
 		self.assertAlmostEqual(17.12196, units.energy.btu.to_kilocalories(67.9), places=1)
-		self.assertAlmostEqual(27.7009516484, units.energy.btu.to_kilocalories(109.9), places=1)
-		self.assertAlmostEqual(1260.279874814, units.energy.btu.to_kilocalories(5000.0), places=1)
+		self.assertAlmostEqual(27.712867639325825, units.energy.btu.to_kilocalories(109.9), places=1)
+		self.assertAlmostEqual(1260.8220036090, units.energy.btu.to_kilocalories(5000.0), places=1)
 
 	def test_convert_known_btu_to_joules(self):
 		self.assertAlmostEqual(5275.3, units.energy.btu.to_joules(5.0), places=1)
@@ -25,8 +25,8 @@ class TestBtuMethods(unittest.TestCase):
 		self.assertAlmostEqual(115001.54, units.energy.btu.to_joules(109.0), places=1)
 
 	def test_convert_known_btu_to_calories(self):
-		self.assertAlmostEqual(14121.184, units.energy.btu.to_calories(56.0), places=1)
-		self.assertAlmostEqual(31016.172, units.energy.btu.to_calories(123.0), places=1)
+		self.assertAlmostEqual(14121.20644042079, units.energy.btu.to_calories(56.0), places=1)
+		self.assertAlmostEqual(31016.221288781402, units.energy.btu.to_calories(123.0), places=1)
 		self.assertAlmostEqual(226.9476, units.energy.btu.to_calories(0.9), places=1)
 
 	def test_convert_known_btu_to_u_s_therms(self):

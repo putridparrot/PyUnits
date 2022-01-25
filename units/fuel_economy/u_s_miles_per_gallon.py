@@ -8,3 +8,5 @@ def to_kilometre_per_litre(value):
 	return value / 2.35215
 def to_miles_per_gallon(value): 
 	return value * 1.20095
+def to_litresper100_kilometres(value): 
+	return 235.215 / value

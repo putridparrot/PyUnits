@@ -16,8 +16,13 @@ class TestMilesPerGallonMethods(unittest.TestCase):
 
 	def test_convert_known_miles_per_gallon_to_u_s_miles_per_gallon(self):
 		self.assertAlmostEqual(1.16574, units.fuel_economy.miles_per_gallon.to_u_s_miles_per_gallon(1.4), places=1)
-		self.assertAlmostEqual(590.36575, units.fuel_economy.miles_per_gallon.to_u_s_miles_per_gallon(709.0), places=1)
-		self.assertAlmostEqual(0.74941, units.fuel_economy.miles_per_gallon.to_u_s_miles_per_gallon(0.9), places=1)
+		self.assertAlmostEqual(839.3356, units.fuel_economy.miles_per_gallon.to_u_s_miles_per_gallon(1008.0), places=1)
+		self.assertAlmostEqual(0.666139, units.fuel_economy.miles_per_gallon.to_u_s_miles_per_gallon(0.8), places=1)
+
+	def test_convert_known_miles_per_gallon_to_litresper100_kilometres(self):
+		self.assertAlmostEqual(12.66731, units.fuel_economy.miles_per_gallon.to_litresper100_kilometres(22.3), places=1)
+		self.assertAlmostEqual(706.202, units.fuel_economy.miles_per_gallon.to_litresper100_kilometres(0.4), places=1)
+		self.assertAlmostEqual(54.3233, units.fuel_economy.miles_per_gallon.to_litresper100_kilometres(5.2), places=1)
 
 if __name__ == '__main__':
     unittest.main()

@@ -9,11 +9,11 @@ def to_kilojoules(value):
 def to_joules(value): 
 	return value * 4184.0
 def to_btu(value): 
-	return value * 3.9673727240424
+	return value / 0.2521644007218
 def to_calories(value): 
 	return value * 1000.0
 def to_u_s_therms(value): 
-	return value / 25210.4
+	return value / 25210.44007218
 def to_watt_hours(value): 
 	return value * 1.16222
 def to_kilowatt_hours(value): 
