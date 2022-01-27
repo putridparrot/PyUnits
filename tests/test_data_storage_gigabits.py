@@ -56,8 +56,8 @@ class TestGigabitsMethods(unittest.TestCase):
 
 	def test_convert_known_gigabits_to_mebibits(self):
 		self.assertAlmostEqual(1.9073486, units.data_storage.gigabits.to_mebibits(0.002), places=1)
-		self.assertAlmostEqual(858.6, units.data_storage.gigabits.to_mebibits(0.9), places=1)
-		self.assertAlmostEqual(5819.4, units.data_storage.gigabits.to_mebibits(6.1), places=1)
+		self.assertAlmostEqual(858.30688476562, units.data_storage.gigabits.to_mebibits(0.9), places=1)
+		self.assertAlmostEqual(5817.413330078125, units.data_storage.gigabits.to_mebibits(6.1), places=1)
 
 if __name__ == '__main__':
     unittest.main()

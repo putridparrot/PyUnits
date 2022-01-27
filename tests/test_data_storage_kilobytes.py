@@ -51,7 +51,7 @@ class TestKilobytesMethods(unittest.TestCase):
 
 	def test_convert_known_kilobytes_to_kibibits(self):
 		self.assertAlmostEqual(0.0703125, units.data_storage.kilobytes.to_kibibits(0.009), places=1)
-		self.assertAlmostEqual(46872.0, units.data_storage.kilobytes.to_kibibits(6e+3), places=1)
+		self.assertAlmostEqual(46875.0, units.data_storage.kilobytes.to_kibibits(6e+3), places=1)
 		self.assertAlmostEqual(9.609375, units.data_storage.kilobytes.to_kibibits(1.23), places=1)
 
 	def test_convert_known_kilobytes_to_mebibits(self):

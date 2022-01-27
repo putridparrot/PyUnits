@@ -11,7 +11,7 @@ def to_kilo_bits_per_second(value):
 def to_mega_bits_per_second(value): 
 	return value * 1.04858
 def to_giga_bits_per_second(value): 
-	return value / 954.0
+	return value / 953.67431640625
 def to_tera_bits_per_second(value): 
 	return value / 953674.0
 def to_kilo_bytes_per_second(value): 

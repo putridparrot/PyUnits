@@ -21,7 +21,7 @@ def to_gigabytes(value):
 def to_terabytes(value): 
 	return value / 1e+9
 def to_kibibits(value): 
-	return value * 7.812
+	return value * 7.8125
 def to_mebibits(value): 
 	return value * 0.00762939
 

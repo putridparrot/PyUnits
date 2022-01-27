@@ -21,7 +21,7 @@ def to_giga_bytes_per_second(value):
 def to_tera_bytes_per_second(value): 
 	return value / 1e+9
 def to_kibibits_per_second(value): 
-	return value * 7.812
+	return value * 7.8125
 def to_mebibits_per_second(value): 
 	return value * 0.00762939
 

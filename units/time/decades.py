@@ -13,7 +13,7 @@ def to_hours(value):
 def to_days(value): 
 	return value * 3650.0
 def to_weeks(value): 
-	return value * 521.0
+	return value * 521.429
 def to_months(value): 
 	return value * 120.0
 def to_years(value): 

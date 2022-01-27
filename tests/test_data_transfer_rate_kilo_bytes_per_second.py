@@ -51,7 +51,7 @@ class TestKiloBytesPerSecondMethods(unittest.TestCase):
 
 	def test_convert_known_kilo_bytes_per_second_to_kibibits_per_second(self):
 		self.assertAlmostEqual(0.0703125, units.data_transfer_rate.kilo_bytes_per_second.to_kibibits_per_second(0.009), places=1)
-		self.assertAlmostEqual(46872.0, units.data_transfer_rate.kilo_bytes_per_second.to_kibibits_per_second(6e+3), places=1)
+		self.assertAlmostEqual(46875.0, units.data_transfer_rate.kilo_bytes_per_second.to_kibibits_per_second(6e+3), places=1)
 		self.assertAlmostEqual(9.609375, units.data_transfer_rate.kilo_bytes_per_second.to_kibibits_per_second(1.23), places=1)
 
 	def test_convert_known_kilo_bytes_per_second_to_mebibits_per_second(self):

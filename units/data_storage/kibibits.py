@@ -15,7 +15,7 @@ def to_gigabits(value):
 def to_terabits(value): 
 	return value / 976562500.0
 def to_kilobytes(value): 
-	return value / 7.812
+	return value / 7.8125
 def to_megabytes(value): 
 	return value / 7812.5
 def to_gigabytes(value): 

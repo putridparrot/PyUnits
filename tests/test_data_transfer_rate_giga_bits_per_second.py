@@ -56,8 +56,8 @@ class TestGigaBitsPerSecondMethods(unittest.TestCase):
 
 	def test_convert_known_giga_bits_per_second_to_mebibits_per_second(self):
 		self.assertAlmostEqual(1.9073486, units.data_transfer_rate.giga_bits_per_second.to_mebibits_per_second(0.002), places=1)
-		self.assertAlmostEqual(858.6, units.data_transfer_rate.giga_bits_per_second.to_mebibits_per_second(0.9), places=1)
-		self.assertAlmostEqual(5819.4, units.data_transfer_rate.giga_bits_per_second.to_mebibits_per_second(6.1), places=1)
+		self.assertAlmostEqual(858.3068847656, units.data_transfer_rate.giga_bits_per_second.to_mebibits_per_second(0.9), places=1)
+		self.assertAlmostEqual(5817.413330078, units.data_transfer_rate.giga_bits_per_second.to_mebibits_per_second(6.1), places=1)
 
 if __name__ == '__main__':
     unittest.main()
