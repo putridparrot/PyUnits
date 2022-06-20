@@ -9,6 +9,11 @@ import units.time.days
 
 class TestDaysMethods(unittest.TestCase):
 
+	def test_convert_known_days_to_milliseconds(self):
+		self.assertAlmostEqual(77760.0, units.time.days.to_milliseconds(0.0009), places=1)
+		self.assertAlmostEqual(2592000.0, units.time.days.to_milliseconds(0.03), places=1)
+		self.assertAlmostEqual(518400.0, units.time.days.to_milliseconds(0.006), places=1)
+
 	def test_convert_known_days_to_seconds(self):
 		self.assertAlmostEqual(120960.0, units.time.days.to_seconds(1.4), places=1)
 		self.assertAlmostEqual(5184.0, units.time.days.to_seconds(0.06), places=1)

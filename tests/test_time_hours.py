@@ -9,6 +9,11 @@ import units.time.hours
 
 class TestHoursMethods(unittest.TestCase):
 
+	def test_convert_known_hours_to_milliseconds(self):
+		self.assertAlmostEqual(21600.0, units.time.hours.to_milliseconds(0.006), places=1)
+		self.assertAlmostEqual(324000.0, units.time.hours.to_milliseconds(0.09), places=1)
+		self.assertAlmostEqual(25200.0, units.time.hours.to_milliseconds(0.007), places=1)
+
 	def test_convert_known_hours_to_seconds(self):
 		self.assertAlmostEqual(43200.0, units.time.hours.to_seconds(12.0), places=1)
 		self.assertAlmostEqual(11520.0, units.time.hours.to_seconds(3.2), places=1)

@@ -9,6 +9,11 @@ import units.time.years
 
 class TestYearsMethods(unittest.TestCase):
 
+	def test_convert_known_years_to_milliseconds(self):
+		self.assertAlmostEqual(31556952.0, units.time.years.to_milliseconds(0.001), places=1)
+		self.assertAlmostEqual(28401256.8, units.time.years.to_milliseconds(0.0009), places=1)
+		self.assertAlmostEqual(10729363.680000002, units.time.years.to_milliseconds(0.00034), places=1)
+
 	def test_convert_known_years_to_seconds(self):
 		self.assertAlmostEqual(1892160.0, units.time.years.to_seconds(0.06), places=1)
 		self.assertAlmostEqual(283824.0, units.time.years.to_seconds(0.009), places=1)

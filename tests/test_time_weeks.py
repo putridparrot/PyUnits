@@ -9,6 +9,11 @@ import units.time.weeks
 
 class TestWeeksMethods(unittest.TestCase):
 
+	def test_convert_known_weeks_to_milliseconds(self):
+		self.assertAlmostEqual(604800.0, units.time.weeks.to_milliseconds(0.001), places=1)
+		self.assertAlmostEqual(3024000.0, units.time.weeks.to_milliseconds(0.005), places=1)
+		self.assertAlmostEqual(544320.0, units.time.weeks.to_milliseconds(0.0009), places=1)
+
 	def test_convert_known_weeks_to_seconds(self):
 		self.assertAlmostEqual(60480.0, units.time.weeks.to_seconds(0.1), places=1)
 		self.assertAlmostEqual(48384.0, units.time.weeks.to_seconds(0.08), places=1)

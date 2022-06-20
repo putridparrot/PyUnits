@@ -4,6 +4,12 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
+def to_nanoseconds(value): 
+	return value * 6.048e+14
+def to_microseconds(value): 
+	return value * 6.048e+11
+def to_milliseconds(value): 
+	return value * 6.048e+8
 def to_seconds(value): 
 	return value * 604800.0
 def to_minutes(value): 

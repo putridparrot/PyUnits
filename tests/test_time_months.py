@@ -9,6 +9,11 @@ import units.time.months
 
 class TestMonthsMethods(unittest.TestCase):
 
+	def test_convert_known_months_to_milliseconds(self):
+		self.assertAlmostEqual(894113.64, units.time.months.to_milliseconds(0.00034), places=1)
+		self.assertAlmostEqual(2629746.0, units.time.months.to_milliseconds(0.001), places=1)
+		self.assertAlmostEqual(15778476.0, units.time.months.to_milliseconds(0.006), places=1)
+
 	def test_convert_known_months_to_seconds(self):
 		self.assertAlmostEqual(78840.00, units.time.months.to_seconds(0.03), places=1)
 		self.assertAlmostEqual(262800.0, units.time.months.to_seconds(0.1), places=1)

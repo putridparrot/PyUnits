@@ -5,25 +5,25 @@
 # </auto-generated>
 
 def to_nanoseconds(value): 
-	return value * 3.154e+17
-def to_microseconds(value): 
-	return value * 3.154e+14
+	return value * 1000.0
 def to_milliseconds(value): 
-	return value * 3.154e+11
+	return value / 1000.0
 def to_seconds(value): 
-	return value * 3.154e+8
+	return value / 1e+6
 def to_minutes(value): 
-	return value * 5.256e+6
+	return value / 6e+7
 def to_hours(value): 
-	return value * 87600.0
+	return value / 3.6e+9
 def to_days(value): 
-	return value * 3650.0
+	return value / 8.64e+10
 def to_weeks(value): 
-	return value * 521.429
+	return value / 6.048e+11
 def to_months(value): 
-	return value * 120.0
+	return value / 2629746000000.0
 def to_years(value): 
-	return value * 10.0
+	return value / 3.154e+13
+def to_decades(value): 
+	return value / 3.154e+14
 def to_centuries(value): 
-	return value / 10.0
+	return value / 3.154e+15
 
