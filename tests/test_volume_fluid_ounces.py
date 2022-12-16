@@ -84,5 +84,25 @@ class TestFluidOuncesMethods(unittest.TestCase):
 		self.assertAlmostEqual(216.171, units.volume.fluid_ounces.to_u_s_cups(1800.0), places=1)
 		self.assertAlmostEqual(0.828655, units.volume.fluid_ounces.to_u_s_cups(6.9), places=1)
 
+	def test_convert_known_fluid_ounces_to_cubic_metres(self):
+		self.assertAlmostEqual(9.00000284, units.volume.fluid_ounces.to_cubic_metres(316756.0), places=1)
+		self.assertAlmostEqual(0.2273043690, units.volume.fluid_ounces.to_cubic_metres(8000.0), places=1)
+		self.assertAlmostEqual(3.5077610, units.volume.fluid_ounces.to_cubic_metres(123456.0), places=1)
+
+	def test_convert_known_fluid_ounces_to_cubic_feet(self):
+		self.assertAlmostEqual(0.891017, units.volume.fluid_ounces.to_cubic_feet(888.0), places=1)
+		self.assertAlmostEqual(101.242841, units.volume.fluid_ounces.to_cubic_feet(100900.0), places=1)
+		self.assertAlmostEqual(0.680304, units.volume.fluid_ounces.to_cubic_feet(678.0), places=1)
+
+	def test_convert_known_fluid_ounces_to_cubic_inches(self):
+		self.assertAlmostEqual(12.1371, units.volume.fluid_ounces.to_cubic_inches(7.0), places=1)
+		self.assertAlmostEqual(1560.48, units.volume.fluid_ounces.to_cubic_inches(900), places=1)
+		self.assertAlmostEqual(10.4032, units.volume.fluid_ounces.to_cubic_inches(6.0), places=1)
+
+	def test_convert_known_fluid_ounces_to_oil_barrels(self):
+		self.assertAlmostEqual(77.0, units.volume.fluid_ounces.to_oil_barrels(430859.0), places=1)
+		self.assertAlmostEqual(0.13886, units.volume.fluid_ounces.to_oil_barrels(777.0), places=1)
+		self.assertAlmostEqual(0.2205316, units.volume.fluid_ounces.to_oil_barrels(1234.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()

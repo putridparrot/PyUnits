@@ -84,5 +84,25 @@ class TestKilolitresMethods(unittest.TestCase):
 		self.assertAlmostEqual(3381.4, units.volume.kilolitres.to_u_s_cups(0.8), places=1)
 		self.assertAlmostEqual(26205.86759392, units.volume.kilolitres.to_u_s_cups(6.2), places=1)
 
+	def test_convert_known_kilolitres_to_cubic_metres(self):
+		self.assertAlmostEqual(1000.0, units.volume.kilolitres.to_cubic_metres(1000.0), places=1)
+		self.assertAlmostEqual(0.9, units.volume.kilolitres.to_cubic_metres(0.9), places=1)
+		self.assertAlmostEqual(6.09, units.volume.kilolitres.to_cubic_metres(6.09), places=1)
+
+	def test_convert_known_kilolitres_to_cubic_feet(self):
+		self.assertAlmostEqual(2.0, units.volume.kilolitres.to_cubic_feet(0.0566337), places=1)
+		self.assertAlmostEqual(278.986, units.volume.kilolitres.to_cubic_feet(7.9), places=1)
+		self.assertAlmostEqual(3107.69, units.volume.kilolitres.to_cubic_feet(88.0), places=1)
+
+	def test_convert_known_kilolitres_to_cubic_inches(self):
+		self.assertAlmostEqual(366142.19999, units.volume.kilolitres.to_cubic_inches(6.0), places=1)
+		self.assertAlmostEqual(6102.37, units.volume.kilolitres.to_cubic_inches(0.1), places=1)
+		self.assertAlmostEqual(48818.959, units.volume.kilolitres.to_cubic_inches(0.8), places=1)
+
+	def test_convert_known_kilolitres_to_oil_barrels(self):
+		self.assertAlmostEqual(3.0, units.volume.kilolitres.to_oil_barrels(0.476962), places=1)
+		self.assertAlmostEqual(25.1592, units.volume.kilolitres.to_oil_barrels(4.0), places=1)
+		self.assertAlmostEqual(37.7389, units.volume.kilolitres.to_oil_barrels(6.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()

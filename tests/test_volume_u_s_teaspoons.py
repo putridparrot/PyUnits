@@ -84,5 +84,25 @@ class TestUSTeaspoonsMethods(unittest.TestCase):
 		self.assertAlmostEqual(93.7666363, units.volume.u_s_teaspoons.to_u_s_cups(4500.8), places=1)
 		self.assertAlmostEqual(0.01875, units.volume.u_s_teaspoons.to_u_s_cups(0.9), places=1)
 
+	def test_convert_known_u_s_teaspoons_to_cubic_metres(self):
+		self.assertAlmostEqual(2.0, units.volume.u_s_teaspoons.to_cubic_metres(405768.0), places=1)
+		self.assertAlmostEqual(0.39829617, units.volume.u_s_teaspoons.to_cubic_metres(80808.0), places=1)
+		self.assertAlmostEqual(0.608504748, units.volume.u_s_teaspoons.to_cubic_metres(123456.0), places=1)
+
+	def test_convert_known_u_s_teaspoons_to_cubic_feet(self):
+		self.assertAlmostEqual(0.3481263, units.volume.u_s_teaspoons.to_cubic_feet(2000.0), places=1)
+		self.assertAlmostEqual(1.2, units.volume.u_s_teaspoons.to_cubic_feet(6894.05), places=1)
+		self.assertAlmostEqual(2.1488098, units.volume.u_s_teaspoons.to_cubic_feet(12345.0), places=1)
+
+	def test_convert_known_u_s_teaspoons_to_cubic_inches(self):
+		self.assertAlmostEqual(7.0, units.volume.u_s_teaspoons.to_cubic_inches(23.2727), places=1)
+		self.assertAlmostEqual(66.0, units.volume.u_s_teaspoons.to_cubic_inches(219.429), places=1)
+		self.assertAlmostEqual(12.0, units.volume.u_s_teaspoons.to_cubic_inches(39.8961), places=1)
+
+	def test_convert_known_u_s_teaspoons_to_oil_barrels(self):
+		self.assertAlmostEqual(3.2, units.volume.u_s_teaspoons.to_oil_barrels(103219.0), places=1)
+		self.assertAlmostEqual(0.2066592, units.volume.u_s_teaspoons.to_oil_barrels(6666.0), places=1)
+		self.assertAlmostEqual(2.0, units.volume.u_s_teaspoons.to_oil_barrels(64512.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()

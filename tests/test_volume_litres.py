@@ -84,5 +84,25 @@ class TestLitresMethods(unittest.TestCase):
 		self.assertAlmostEqual(439.15962, units.volume.litres.to_u_s_cups(103.9), places=1)
 		self.assertAlmostEqual(302.6355, units.volume.litres.to_u_s_cups(71.6), places=1)
 
+	def test_convert_known_litres_to_cubic_metres(self):
+		self.assertAlmostEqual(0.4005, units.volume.litres.to_cubic_metres(400.5), places=1)
+		self.assertAlmostEqual(0.9, units.volume.litres.to_cubic_metres(900.0), places=1)
+		self.assertAlmostEqual(6.09, units.volume.litres.to_cubic_metres(6090.0), places=1)
+
+	def test_convert_known_litres_to_cubic_feet(self):
+		self.assertAlmostEqual(0.176573, units.volume.litres.to_cubic_feet(5.0), places=1)
+		self.assertAlmostEqual(3.0, units.volume.litres.to_cubic_feet(84.9505), places=1)
+		self.assertAlmostEqual(0.211888, units.volume.litres.to_cubic_feet(6.0), places=1)
+
+	def test_convert_known_litres_to_cubic_inches(self):
+		self.assertAlmostEqual(40641.7842, units.volume.litres.to_cubic_inches(666.0), places=1)
+		self.assertAlmostEqual(48086.675599, units.volume.litres.to_cubic_inches(788.0), places=1)
+		self.assertAlmostEqual(244.095, units.volume.litres.to_cubic_inches(4.0), places=1)
+
+	def test_convert_known_litres_to_oil_barrels(self):
+		self.assertAlmostEqual(55.0, units.volume.litres.to_oil_barrels(8744.3), places=1)
+		self.assertAlmostEqual(7.761626, units.volume.litres.to_oil_barrels(1234.0), places=1)
+		self.assertAlmostEqual(6.0, units.volume.litres.to_oil_barrels(953.924), places=1)
+
 if __name__ == '__main__':
     unittest.main()

@@ -52,7 +52,7 @@ class TestKibibitsPerSecondMethods(unittest.TestCase):
 	def test_convert_known_kibibits_per_second_to_tera_bytes_per_second(self):
 		self.assertAlmostEqual(0.01536, units.data_transfer_rate.kibibits_per_second.to_tera_bytes_per_second(120000000.0), places=1)
 		self.assertAlmostEqual(11264.0, units.data_transfer_rate.kibibits_per_second.to_tera_bytes_per_second(88e12), places=1)
-		self.assertAlmostEqual(0.009216, units.data_transfer_rate.kibibits_per_second.to_tera_bytes_per_second(9000000.0), places=1)
+		self.assertAlmostEqual(0.001152, units.data_transfer_rate.kibibits_per_second.to_tera_bytes_per_second(9000000.0), places=1)
 
 	def test_convert_known_kibibits_per_second_to_mebibits_per_second(self):
 		self.assertAlmostEqual(0.5859375, units.data_transfer_rate.kibibits_per_second.to_mebibits_per_second(600.0), places=1)

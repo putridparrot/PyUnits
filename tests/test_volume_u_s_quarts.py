@@ -84,5 +84,25 @@ class TestUSQuartsMethods(unittest.TestCase):
 		self.assertAlmostEqual(495.6, units.volume.u_s_quarts.to_u_s_cups(123.9), places=1)
 		self.assertAlmostEqual(2.64, units.volume.u_s_quarts.to_u_s_cups(0.66), places=1)
 
+	def test_convert_known_u_s_quarts_to_cubic_metres(self):
+		self.assertAlmostEqual(8.0, units.volume.u_s_quarts.to_cubic_metres(8453.51), places=1)
+		self.assertAlmostEqual(4.731765, units.volume.u_s_quarts.to_cubic_metres(5000.0), places=1)
+		self.assertAlmostEqual(116.832949, units.volume.u_s_quarts.to_cubic_metres(123456.0), places=1)
+
+	def test_convert_known_u_s_quarts_to_cubic_feet(self):
+		self.assertAlmostEqual(1.47049, units.volume.u_s_quarts.to_cubic_feet(44.0), places=1)
+		self.assertAlmostEqual(89.0, units.volume.u_s_quarts.to_cubic_feet(2663.06), places=1)
+		self.assertAlmostEqual(14.8385, units.volume.u_s_quarts.to_cubic_feet(444.0), places=1)
+
+	def test_convert_known_u_s_quarts_to_cubic_inches(self):
+		self.assertAlmostEqual(2541.0, units.volume.u_s_quarts.to_cubic_inches(44.0), places=1)
+		self.assertAlmostEqual(46200.0, units.volume.u_s_quarts.to_cubic_inches(800.0), places=1)
+		self.assertAlmostEqual(346.5, units.volume.u_s_quarts.to_cubic_inches(6.0), places=1)
+
+	def test_convert_known_u_s_quarts_to_oil_barrels(self):
+		self.assertAlmostEqual(55.0, units.volume.u_s_quarts.to_oil_barrels(9240.0), places=1)
+		self.assertAlmostEqual(8.0, units.volume.u_s_quarts.to_oil_barrels(1344.0), places=1)
+		self.assertAlmostEqual(1234.0, units.volume.u_s_quarts.to_oil_barrels(207312.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()

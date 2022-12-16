@@ -84,5 +84,25 @@ class TestUSGallonsMethods(unittest.TestCase):
 		self.assertAlmostEqual(91.36, units.volume.u_s_gallons.to_u_s_cups(5.71), places=1)
 		self.assertAlmostEqual(15.68, units.volume.u_s_gallons.to_u_s_cups(0.98), places=1)
 
+	def test_convert_known_u_s_gallons_to_cubic_metres(self):
+		self.assertAlmostEqual(7.0, units.volume.u_s_gallons.to_cubic_metres(1849.2), places=1)
+		self.assertAlmostEqual(0.329331, units.volume.u_s_gallons.to_cubic_metres(87.0), places=1)
+		self.assertAlmostEqual(467.331797, units.volume.u_s_gallons.to_cubic_metres(123456.0), places=1)
+
+	def test_convert_known_u_s_gallons_to_cubic_feet(self):
+		self.assertAlmostEqual(0.802083, units.volume.u_s_gallons.to_cubic_feet(6.0), places=1)
+		self.assertAlmostEqual(3.20833, units.volume.u_s_gallons.to_cubic_feet(24.0), places=1)
+		self.assertAlmostEqual(0.668403, units.volume.u_s_gallons.to_cubic_feet(5.0), places=1)
+
+	def test_convert_known_u_s_gallons_to_cubic_inches(self):
+		self.assertAlmostEqual(1386.0, units.volume.u_s_gallons.to_cubic_inches(6.0), places=1)
+		self.assertAlmostEqual(43890.0, units.volume.u_s_gallons.to_cubic_inches(190.0), places=1)
+		self.assertAlmostEqual(12705.0, units.volume.u_s_gallons.to_cubic_inches(55.0), places=1)
+
+	def test_convert_known_u_s_gallons_to_oil_barrels(self):
+		self.assertAlmostEqual(23.0, units.volume.u_s_gallons.to_oil_barrels(966.0), places=1)
+		self.assertAlmostEqual(29.38095, units.volume.u_s_gallons.to_oil_barrels(1234.0), places=1)
+		self.assertAlmostEqual(0.4, units.volume.u_s_gallons.to_oil_barrels(16.8), places=1)
+
 if __name__ == '__main__':
     unittest.main()

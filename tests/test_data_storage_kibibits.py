@@ -52,7 +52,7 @@ class TestKibibitsMethods(unittest.TestCase):
 	def test_convert_known_kibibits_to_terabytes(self):
 		self.assertAlmostEqual(0.01536, units.data_storage.kibibits.to_terabytes(120000000.0), places=1)
 		self.assertAlmostEqual(11264.0, units.data_storage.kibibits.to_terabytes(88e12), places=1)
-		self.assertAlmostEqual(0.009216, units.data_storage.kibibits.to_terabytes(9000000.0), places=1)
+		self.assertAlmostEqual(0.001152, units.data_storage.kibibits.to_terabytes(9000000.0), places=1)
 
 	def test_convert_known_kibibits_to_mebibits(self):
 		self.assertAlmostEqual(0.5859375, units.data_storage.kibibits.to_mebibits(600.0), places=1)

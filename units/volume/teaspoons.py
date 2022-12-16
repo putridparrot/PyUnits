@@ -34,4 +34,12 @@ def to_u_s_fluid_ounces(value):
 	return value / 4.9960430427983437824
 def to_u_s_cups(value): 
 	return value / 39.968344342386753536
+def to_cubic_metres(value): 
+	return value / 168936.0
+def to_cubic_feet(value): 
+	return value / 4783.74
+def to_cubic_inches(value): 
+	return value / 2.76837
+def to_oil_barrels(value): 
+	return value / 26858.7
 

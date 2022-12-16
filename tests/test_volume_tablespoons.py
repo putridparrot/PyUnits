@@ -84,5 +84,25 @@ class TestTablespoonsMethods(unittest.TestCase):
 		self.assertAlmostEqual(0.255202, units.volume.tablespoons.to_u_s_cups(3.4), places=1)
 		self.assertAlmostEqual(75.0594, units.volume.tablespoons.to_u_s_cups(1000.0), places=1)
 
+	def test_convert_known_tablespoons_to_cubic_metres(self):
+		self.assertAlmostEqual(0.1775817, units.volume.tablespoons.to_cubic_metres(10000.0), places=1)
+		self.assertAlmostEqual(0.059999995422, units.volume.tablespoons.to_cubic_metres(3378.726), places=1)
+		self.assertAlmostEqual(14.2066969, units.volume.tablespoons.to_cubic_metres(800009.0), places=1)
+
+	def test_convert_known_tablespoons_to_cubic_feet(self):
+		self.assertAlmostEqual(0.489157, units.volume.tablespoons.to_cubic_feet(780.0), places=1)
+		self.assertAlmostEqual(4.0, units.volume.tablespoons.to_cubic_feet(6378.32), places=1)
+		self.assertAlmostEqual(5.3, units.volume.tablespoons.to_cubic_feet(8451.28), places=1)
+
+	def test_convert_known_tablespoons_to_cubic_inches(self):
+		self.assertAlmostEqual(71.5222, units.volume.tablespoons.to_cubic_inches(66.0), places=1)
+		self.assertAlmostEqual(133.291, units.volume.tablespoons.to_cubic_inches(123.0), places=1)
+		self.assertAlmostEqual(60.6855, units.volume.tablespoons.to_cubic_inches(56.0), places=1)
+
+	def test_convert_known_tablespoons_to_oil_barrels(self):
+		self.assertAlmostEqual(5.0, units.volume.tablespoons.to_oil_barrels(44764.5), places=1)
+		self.assertAlmostEqual(1.3651429, units.volume.tablespoons.to_oil_barrels(12222.0), places=1)
+		self.assertAlmostEqual(0.0893564, units.volume.tablespoons.to_oil_barrels(800.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()
