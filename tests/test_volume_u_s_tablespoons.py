@@ -100,7 +100,7 @@ class TestUSTablespoonsMethods(unittest.TestCase):
 		self.assertAlmostEqual(3.60938, units.volume.u_s_tablespoons.to_cubic_inches(4.0), places=1)
 
 	def test_convert_known_u_s_tablespoons_to_oil_barrels(self):
-		self.assertAlmostEqual(55.0, units.volume.u_s_tablespoons.to_oil_barrels(591360), places=1)
+		self.assertAlmostEqual(55.0, units.volume.u_s_tablespoons.to_oil_barrels(591360.0), places=1)
 		self.assertAlmostEqual(0.4, units.volume.u_s_tablespoons.to_oil_barrels(4300.8), places=1)
 		self.assertAlmostEqual(3.2, units.volume.u_s_tablespoons.to_oil_barrels(34406.4), places=1)
 

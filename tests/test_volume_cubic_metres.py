@@ -56,7 +56,7 @@ class TestCubicMetresMethods(unittest.TestCase):
 
 	def test_convert_known_cubic_metres_to_u_s_teaspoons(self):
 		self.assertAlmostEqual(101442.0, units.volume.cubic_metres.to_u_s_teaspoons(0.5), places=1)
-		self.assertAlmostEqual(405768.0, units.volume.cubic_metres.to_u_s_teaspoons(2), places=1)
+		self.assertAlmostEqual(405768.0, units.volume.cubic_metres.to_u_s_teaspoons(2.0), places=1)
 		self.assertAlmostEqual(60865.199, units.volume.cubic_metres.to_u_s_teaspoons(0.3), places=1)
 
 	def test_convert_known_cubic_metres_to_u_s_tablespoons(self):

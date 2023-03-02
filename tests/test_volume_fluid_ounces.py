@@ -96,7 +96,7 @@ class TestFluidOuncesMethods(unittest.TestCase):
 
 	def test_convert_known_fluid_ounces_to_cubic_inches(self):
 		self.assertAlmostEqual(12.1371, units.volume.fluid_ounces.to_cubic_inches(7.0), places=1)
-		self.assertAlmostEqual(1560.48, units.volume.fluid_ounces.to_cubic_inches(900), places=1)
+		self.assertAlmostEqual(1560.48, units.volume.fluid_ounces.to_cubic_inches(900.0), places=1)
 		self.assertAlmostEqual(10.4032, units.volume.fluid_ounces.to_cubic_inches(6.0), places=1)
 
 	def test_convert_known_fluid_ounces_to_oil_barrels(self):

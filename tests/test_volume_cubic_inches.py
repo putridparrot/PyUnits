@@ -76,7 +76,7 @@ class TestCubicInchesMethods(unittest.TestCase):
 
 	def test_convert_known_cubic_inches_to_u_s_gallons(self):
 		self.assertAlmostEqual(2.5974, units.volume.cubic_inches.to_u_s_gallons(600.0), places=1)
-		self.assertAlmostEqual(2.0, units.volume.cubic_inches.to_u_s_gallons(462), places=1)
+		self.assertAlmostEqual(2.0, units.volume.cubic_inches.to_u_s_gallons(462.0), places=1)
 		self.assertAlmostEqual(3.89177, units.volume.cubic_inches.to_u_s_gallons(899.0), places=1)
 
 	def test_convert_known_cubic_inches_to_u_s_fluid_ounces(self):
@@ -92,7 +92,7 @@ class TestCubicInchesMethods(unittest.TestCase):
 	def test_convert_known_cubic_inches_to_cubic_metres(self):
 		self.assertAlmostEqual(0.4, units.volume.cubic_inches.to_cubic_metres(24409.5), places=1)
 		self.assertAlmostEqual(0.1274422, units.volume.cubic_inches.to_cubic_metres(7777.0), places=1)
-		self.assertAlmostEqual(6.0, units.volume.cubic_inches.to_cubic_metres(366142), places=1)
+		self.assertAlmostEqual(6.0, units.volume.cubic_inches.to_cubic_metres(366142.0), places=1)
 
 	def test_convert_known_cubic_inches_to_cubic_feet(self):
 		self.assertAlmostEqual(6.8, units.volume.cubic_inches.to_cubic_feet(11750.4), places=1)
