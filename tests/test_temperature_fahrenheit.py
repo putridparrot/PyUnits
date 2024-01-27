@@ -24,5 +24,10 @@ class TestFahrenheitMethods(unittest.TestCase):
 		self.assertAlmostEqual(468.87, units.temperature.fahrenheit.to_rankine(9.2), places=1)
 		self.assertAlmostEqual(459.87, units.temperature.fahrenheit.to_rankine(0.2), places=1)
 
+	def test_convert_known_fahrenheit_to_reaumur(self):
+		self.assertAlmostEqual(15.555555556, units.temperature.fahrenheit.to_reaumur(67.0), places=1)
+		self.assertAlmostEqual(-13.511111111, units.temperature.fahrenheit.to_reaumur(1.6), places=1)
+		self.assertAlmostEqual(385.77777778, units.temperature.fahrenheit.to_reaumur(900.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()

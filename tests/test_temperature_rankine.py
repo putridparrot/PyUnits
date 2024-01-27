@@ -24,5 +24,10 @@ class TestRankineMethods(unittest.TestCase):
 		self.assertAlmostEqual(0.5, units.temperature.rankine.to_kelvin(0.9), places=1)
 		self.assertAlmostEqual(12.777777778, units.temperature.rankine.to_kelvin(23.0), places=1)
 
+	def test_convert_known_rankine_to_reaumur(self):
+		self.assertAlmostEqual(181.48, units.temperature.rankine.to_reaumur(900.0), places=1)
+		self.assertAlmostEqual(-203.00888889, units.temperature.rankine.to_reaumur(34.9), places=1)
+		self.assertAlmostEqual(-218.20888889, units.temperature.rankine.to_reaumur(0.7), places=1)
+
 if __name__ == '__main__':
     unittest.main()

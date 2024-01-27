@@ -10,4 +10,6 @@ def to_kelvin(value):
 	return value + 273.15
 def to_rankine(value): 
 	return value * 9.0/5.0 + 491.67
+def to_reaumur(value): 
+	return value / 1.25
 

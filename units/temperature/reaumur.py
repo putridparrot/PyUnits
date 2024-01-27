@@ -4,12 +4,11 @@
 # Changes to this file will be lost if the code is regenerated
 # </auto-generated>
 
-def to_celsius(value): 
-	return ((value - 32.0) * 5.0) / 9.0
 def to_kelvin(value): 
-	return (((value - 32.0) * 5.0) / 9.0) + 273.15
+	return value * 1.25 + 273.15
+def to_celsius(value): 
+	return value * 1.25
+def to_fahrenheit(value): 
+	return value * 2.25 + 32.0
 def to_rankine(value): 
-	return value + 459.67
-def to_reaumur(value): 
-	return (value - 32.0) / 2.25
-
+	return value * 2.25 + 491.67

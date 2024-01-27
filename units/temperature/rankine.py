@@ -10,3 +10,6 @@ def to_fahrenheit(value):
 	return value - 459.67
 def to_kelvin(value): 
 	return value / 1.8
+def to_reaumur(value): 
+	return (value - 491.67) / 2.25
+

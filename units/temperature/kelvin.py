@@ -10,4 +10,6 @@ def to_fahrenheit(value):
 	return ((value - 273.15) * 1.8) + 32.0
 def to_rankine(value): 
 	return value * 1.8
+def to_reaumur(value): 
+	return (value - 273.15) / 1.25
 

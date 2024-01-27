@@ -24,5 +24,10 @@ class TestCelsiusMethods(unittest.TestCase):
 		self.assertAlmostEqual(513.27, units.temperature.celsius.to_rankine(12.0), places=1)
 		self.assertAlmostEqual(486.27, units.temperature.celsius.to_rankine(-3.0), places=1)
 
+	def test_convert_known_celsius_to_reaumur(self):
+		self.assertAlmostEqual(98.4, units.temperature.celsius.to_reaumur(123.0), places=1)
+		self.assertAlmostEqual(12.536, units.temperature.celsius.to_reaumur(15.67), places=1)
+		self.assertAlmostEqual(69.6, units.temperature.celsius.to_reaumur(87.0), places=1)
+
 if __name__ == '__main__':
     unittest.main()
